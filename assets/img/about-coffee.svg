@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8F4EC"/>
+      <stop offset="100%" stop-color="#d9c9b4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <circle cx="600" cy="430" r="230" fill="#6F4E37" opacity="0.12"/>
+  <g transform="translate(600,450)" stroke="#3E2723" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M-80,-28 H80 V58 a80,80 0 0 1 -160,0 Z"/>
+    <path d="M80,0 H110 a36,36 0 0 1 0,72 H96"/>
+  </g>
+  <path d="M-30,-54 q30,-24 60,0" stroke="#3E2723" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <text x="600" y="760" font-family="Arial, sans-serif" font-size="40" fill="#3E2723" text-anchor="middle" opacity="0.8" font-weight="bold">TENTANG KAMI</text>
+</svg>

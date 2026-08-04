@@ -1,0 +1,136 @@
+/* ============================================================
+   WEBSITE UMKM KOPI - CUSTOM STYLE
+   ============================================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #6F4E37; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #B87333; }
+
+/* Seleksi teks */
+::selection { background: #B87333; color: #fff; }
+
+/* ============================================================
+   INTERAKSI GLOBAL (UX)
+   ============================================================ */
+/* Semua elemen interaktif memakai kursor pointer */
+a[href], button, [role=button], select, summary, label[for], input[type=checkbox],
+input[type=radio], input[type=range], input[type=file] { cursor: pointer; }
+button:disabled, button[disabled] { cursor: not-allowed; }
+
+/* Focus ring yang terlihat untuk navigasi keyboard */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(184, 115, 51, 0.55);
+}
+
+/* Forum input: batalkan focus ring global, pakai border */
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    box-shadow: 0 0 0 3px rgba(62, 39, 35, 0.08);
+}
+
+/* ============================================================
+   GLASS / UTILITAS
+   ============================================================ */
+.glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.dark .glass {
+    background: rgba(62, 39, 35, 0.72);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+.glass-dark {
+    background: rgba(248, 244, 236, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(248, 244, 236, 0.15);
+}
+
+/* ============================================================
+   NAVBAR FLOATING
+   ============================================================ */
+#navbar .nav-inner {
+    transition: all 0.3s ease;
+}
+#navbar.scrolled .nav-inner {
+    margin-top: 0;
+    background: rgba(248, 244, 236, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 10px 34px -16px rgba(62, 39, 35, 0.45);
+}
+html.dark #navbar.scrolled .nav-inner {
+    background: rgba(62, 39, 35, 0.85);
+}
+
+/* ============================================================
+   LINE CLAMP
+   ============================================================ */
+.line-clamp-2, .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp-2 { -webkit-line-clamp: 2; }
+.line-clamp-3 { -webkit-line-clamp: 3; }
+
+/* ============================================================
+   PROSE (isi artikel)
+   ============================================================ */
+.prose-custom h2 { font-size: 1.5rem; font-weight: 800; margin-top: 1.75rem; margin-bottom: 0.75rem; }
+.prose-custom h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.prose-custom p { margin-bottom: 1.1rem; line-height: 1.8; }
+.prose-custom ul, .prose-custom ol { margin: 0 0 1.1rem 1.25rem; list-style: disc; }
+.prose-custom strong { font-weight: 700; color: #B87333; }
+.prose-custom a { color: #B87333; text-decoration: underline; }
+.prose-custom blockquote { border-left: 4px solid #B87333; padding-left: 1rem; font-style: italic; margin: 1.25rem 0; }
+
+/* ============================================================
+   SKELETON
+   ============================================================ */
+.skeleton { position: relative; overflow: hidden; background: rgba(196, 184, 170, 0.35); }
+.skeleton::after {
+    content: '';
+    position: absolute; inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+    animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+
+/* ============================================================
+   SHINE HOVER (produk & gambar)
+   ============================================================ */
+.product-img-wrap { position: relative; overflow: hidden; }
+.product-img-wrap::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.35) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.7s ease;
+}
+.product-img-wrap:hover::after { transform: translateX(100%); }
+
+/* ============================================================
+   ANIMASI RESPONSIF & MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+@media (max-width: 640px) {
+    [data-aos] { transition-duration: 300ms !important; }
+}
