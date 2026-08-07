@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B87333"/>
+      <stop offset="55%" stop-color="#6F4E37"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#sky)"/>
+  <circle cx="610" cy="180" r="80" fill="#F8F4EC" opacity="0.9"/>
+  <circle cx="610" cy="180" r="56" fill="#B87333" opacity="0.85"/>
+  <path d="M0,520 L150,430 L300,505 L460,420 L620,500 L800,430 V1200 H0 Z" fill="#6B7A4A" opacity="0.9"/>
+  <path d="M0,680 L180,590 L360,665 L540,585 L700,660 L800,620 V1200 H0 Z" fill="#55613A" opacity="0.92"/>
+  <path d="M0,860 L200,770 L420,850 L620,765 L800,845 V1200 H0 Z" fill="#3E2723" opacity="0.6"/>
+  <g fill="#2F4A33" opacity="0.9">
+    <rect x="60" y="460" width="7" height="120" rx="3"/>
+    <circle cx="63" cy="452" r="22"/>
+    <rect x="240" y="430" width="7" height="130" rx="3"/>
+    <circle cx="243" cy="422" r="26"/>
+    <rect x="500" y="420" width="7" height="110" rx="3"/>
+    <circle cx="503" cy="412" r="20"/>
+    <rect x="660" y="470" width="7" height="100" rx="3"/>
+    <circle cx="663" cy="462" r="18"/>
+  </g>
+  <g fill="#55613A" opacity="0.9">
+    <rect x="360" y="600" width="7" height="130" rx="3"/>
+    <circle cx="363" cy="592" r="24"/>
+    <rect x="120" y="640" width="7" height="110" rx="3"/>
+    <circle cx="123" cy="632" r="20"/>
+    <rect x="590" y="610" width="7" height="120" rx="3"/>
+    <circle cx="593" cy="602" r="22"/>
+  </g>
+  <g fill="#3E2723" opacity="0.9">
+    <rect x="230" y="800" width="7" height="100" rx="3"/>
+    <circle cx="233" cy="792" r="18"/>
+    <rect x="450" y="790" width="7" height="110" rx="3"/>
+    <circle cx="453" cy="782" r="20"/>
+  </g>
+  <path d="M0,1040 C180,980 320,1060 520,1010 S720,960 800,1000 V1200 H0 Z" fill="#F8F4EC" opacity="0.08"/>
+  <text x="400" y="1090" font-family="Arial, sans-serif" font-size="38" fill="#F8F4EC" text-anchor="middle" opacity="0.9" font-weight="bold">KEBUN KOPI DATARAN TINGGI</text>
+  <text x="400" y="1135" font-family="Arial, sans-serif" font-size="22" fill="#F8F4EC" text-anchor="middle" opacity="0.7">Bersumber langsung dari petani lokal</text>
+</svg>

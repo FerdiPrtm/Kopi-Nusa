@@ -42,7 +42,7 @@ $darkOn = (isset($_COOKIE['dark']) && $_COOKIE['dark'] === '1')
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@1.29.0/dist/umd/lucide.js"></script>
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">

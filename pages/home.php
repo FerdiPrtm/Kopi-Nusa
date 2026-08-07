@@ -258,21 +258,26 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
 <section class="bg-gradient-to-b from-white/60 to-transparent py-24 dark:from-white/[0.02]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center" data-aos="fade-up">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">Galeri</span>
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">
+                <span class="h-px w-8 bg-copper"></span> Galeri
+            </span>
             <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Momen Kami</h2>
             <span class="mx-auto mt-4 block h-1 w-16 rounded-full bg-gradient-to-r from-copper to-orange-500"></span>
+            <p class="mt-4 text-espresso/70 dark:text-cream/70">Dokumentasi aktivitas dan momen hangat dari dapur Nusantara Coffee.</p>
         </div>
-        <div class="mt-12 columns-1 gap-6 sm:columns-2 lg:columns-4">
-            <?php foreach ($galeris as $g): ?>
-            <button type="button" class="lightbox-trigger group relative mb-6 block w-full overflow-hidden rounded-2xl shadow-soft" data-full="<?= e(asset($g['gambar'])) ?>">
-                <img src="<?= e(asset($g['gambar'])) ?>" loading="lazy" alt="<?= e($g['caption']) ?>" class="w-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <span class="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-espresso/70 via-espresso/10 to-transparent opacity-0 transition-all duration-300 group-hover:opacity-100">
-                    <span class="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 backdrop-blur">
+        <div class="mt-12 columns-2 gap-4 sm:columns-3 sm:gap-5 lg:columns-4">
+            <?php foreach ($galeris as $i => $g): ?>
+            <button type="button" class="lightbox-trigger group relative mb-4 block w-full break-inside-avoid overflow-hidden rounded-2xl shadow-soft ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-copper/50 dark:ring-white/10 sm:mb-5" data-full="<?= e(asset($g['gambar'])) ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 80 ?>">
+                <img src="<?= e(asset($g['gambar'])) ?>" loading="lazy" alt="<?= e($g['caption'] ?: 'Momen Kami') ?>" class="w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <span class="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-espresso/80 via-espresso/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 backdrop-blur ring-1 ring-white/30 transition-transform duration-300 group-hover:scale-110">
                         <i data-lucide="zoom-in" class="h-6 w-6 text-white"></i>
                     </span>
                 </span>
                 <?php if ($g['caption']): ?>
-                    <span class="absolute bottom-3 left-3 right-3 translate-y-2 text-left text-xs font-medium text-white opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"><?= e($g['caption']) ?></span>
+                    <span class="absolute inset-x-0 bottom-0 translate-y-3 bg-gradient-to-t from-espresso/90 to-transparent px-4 pb-3.5 pt-10 text-left text-sm font-medium text-white opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                        <i data-lucide="camera" class="mr-1.5 inline h-3.5 w-3.5 text-copper"></i><?= e($g['caption']) ?>
+                    </span>
                 <?php endif; ?>
             </button>
             <?php endforeach; ?>

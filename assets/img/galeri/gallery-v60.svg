@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#6F4E37"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="120" cy="90" r="80" fill="#F8F4EC" opacity="0.07"/>
+  <g transform="translate(400,250)">
+    <path d="M0,-140 q70,-20 120,-50 q-20,70 0,120 q-50,-20 -120,-14 Z" fill="#F8F4EC" opacity="0.25" transform="translate(0,-10)"/>
+    <path d="M-90,-90 q0,-20 0,-20 M-40,-110 q-4,-20 6,-34 M10,-120 q0,-22 14,-30" stroke="#F8F4EC" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.4"/>
+    <path d="M-120,40 q0,-160 110,-200" stroke="#F8F4EC" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M-100,42 q0,-150 105,-185" stroke="#F8F4EC" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.3"/>
+    <path d="M-95,56 H95 V150 a95,95 0 0 1 -190,0 Z" fill="#F8F4EC" stroke="#3E2723" stroke-width="5" opacity="0.96"/>
+    <path d="M90,60 H112 a26,26 0 0 1 0,52 H100" fill="none" stroke="#F8F4EC" stroke-width="9" stroke-linecap="round" opacity="0.96"/>
+    <path d="M-95,60 Q0,120 95,60 Q0,40 -95,60 Z" fill="#B87333" opacity="0.9"/>
+    <circle cx="0" cy="60" r="30" fill="#F8F4EC" opacity="0.55"/>
+  </g>
+  <ellipse cx="400" cy="425" rx="250" ry="20" fill="#3E2723" opacity="0.45"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="36" fill="#F8F4EC" text-anchor="middle" opacity="0.9" font-weight="bold">V60 HAND BREW</text>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="20" fill="#F8F4EC" text-anchor="middle" opacity="0.7">Diseduh manual dengan penuh perhatian</text>
+</svg>

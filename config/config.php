@@ -8,7 +8,7 @@
 define('ROOTPATH', __DIR__ . '/..');
 
 // URL dasar website - sesuaikan bila folder berbeda
-define('BASE_URL', 'http://localhost/coffe');
+define('BASE_URL', 'http://localhost/Kopi-Nusa');
 
 // URL untuk folder assets (front end & admin)
 define('ASSET_URL', BASE_URL . '/assets');

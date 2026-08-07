@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@1.29.0/dist/umd/lucide.js"></script>
 </head>
 <body class="flex min-h-screen items-center justify-center bg-gradient-to-br from-espresso via-coffee to-espresso px-4 font-sans">
     <div class="pointer-events-none fixed -left-24 top-10 h-72 w-72 rounded-full bg-copper/20 blur-3xl"></div>

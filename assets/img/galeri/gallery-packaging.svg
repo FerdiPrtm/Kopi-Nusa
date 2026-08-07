@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="700" viewBox="0 0 800 700">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6F4E37"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#g)"/>
+  <circle cx="680" cy="120" r="100" fill="#F8F4EC" opacity="0.07"/>
+  <g transform="translate(400,380)">
+    <path d="M-150,-230 L-90,170 a100,100 0 0 0 180,0 L150,-230 Z" fill="#F8F4EC" stroke="#3E2723" stroke-width="6" opacity="0.96"/>
+    <path d="M-150,-230 H150" stroke="#3E2723" stroke-width="8" opacity="0.85"/>
+    <path d="M-96,-180 H96 V-60 H-96 Z" fill="#6F4E37" stroke="#3E2723" stroke-width="5" opacity="0.9"/>
+    <circle cx="0" cy="-120" r="34" fill="#B87333" stroke="#F8F4EC" stroke-width="5" opacity="0.95"/>
+    <path d="M0,-186 q0,10 8,14 q-4,-14 -8,-14" fill="#3E2723" opacity="0.7"/>
+    <text x="0" y="-90" font-family="Arial, sans-serif" font-size="30" fill="#F8F4EC" text-anchor="middle" opacity="0.9" font-weight="bold">KOPI</text>
+    <text x="0" y="-58" font-family="Arial, sans-serif" font-size="22" fill="#F8F4EC" text-anchor="middle" opacity="0.7">NUSANTARA</text>
+    <path d="M150,-40 q30,-6 34,22 q-26,4 -34,-22" fill="#B87333" opacity="0.9"/>
+    <rect x="-52" y="210" width="104" height="22" rx="11" fill="#3E2723" opacity="0.75"/>
+  </g>
+  <ellipse cx="400" cy="600" rx="230" ry="20" fill="#3E2723" opacity="0.45"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="36" fill="#F8F4EC" text-anchor="middle" opacity="0.9" font-weight="bold">KEMASAN BARU</text>
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="20" fill="#F8F4EC" text-anchor="middle" opacity="0.7">Fresh &amp; kedap udara · siap kirim ke mana saja</text>
+</svg>
