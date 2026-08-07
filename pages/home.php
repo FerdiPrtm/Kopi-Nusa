@@ -103,8 +103,8 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
             </div>
         </div>
         <div data-aos="fade-left">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">
-                <span class="h-px w-8 bg-copper"></span> Tentang Kami
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper dark:text-copperLight">
+                <span class="h-px w-8 bg-copper dark:bg-copperLight"></span> Tentang Kami
             </span>
             <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl"><?= e(site('tentang_judul', 'Tentang Kami')) ?></h2>
             <p class="mt-5 leading-relaxed text-espresso/75 dark:text-cream/70"><?= nl2br(e(site('tentang_konten', ''))) ?></p>
@@ -133,7 +133,7 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
 <section class="bg-gradient-to-b from-transparent to-white/60 py-24 dark:to-white/[0.02]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center" data-aos="fade-up">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper dark:text-copperLight">
                 Koleksi Pilihan
             </span>
             <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Produk Unggulan</h2>
@@ -157,7 +157,7 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
 <section class="py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center" data-aos="fade-up">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">Keunggulan</span>
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper dark:text-copperLight">Keunggulan</span>
             <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Kenapa Memilih Kami?</h2>
             <span class="mx-auto mt-4 block h-1 w-16 rounded-full bg-gradient-to-r from-copper to-orange-500"></span>
         </div>
@@ -189,7 +189,7 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
     <div class="pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-coffee/20 blur-3xl"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center" data-aos="fade-up">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">Testimoni</span>
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copperLight">Testimoni</span>
             <h2 class="mt-3 text-3xl font-extrabold text-white sm:text-4xl">Kata Mereka</h2>
             <span class="mx-auto mt-4 block h-1 w-16 rounded-full bg-gradient-to-r from-copper to-orange-500"></span>
         </div>
@@ -223,8 +223,8 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap items-end justify-between gap-4" data-aos="fade-up">
             <div>
-                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">
-                    <span class="h-px w-8 bg-copper"></span> Blog
+                <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper dark:text-copperLight">
+                    <span class="h-px w-8 bg-copper dark:bg-copperLight"></span> Kabar Kopi
                 </span>
                 <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Artikel Terbaru</h2>
             </div>
@@ -258,8 +258,8 @@ $totalProduk = (int)db()->query("SELECT COUNT(*) FROM produk")->fetchColumn();
 <section class="bg-gradient-to-b from-white/60 to-transparent py-24 dark:from-white/[0.02]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center" data-aos="fade-up">
-            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">
-                <span class="h-px w-8 bg-copper"></span> Galeri
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper dark:text-copperLight">
+                <span class="h-px w-8 bg-copper dark:bg-copperLight"></span> Dokumentasi
             </span>
             <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Momen Kami</h2>
             <span class="mx-auto mt-4 block h-1 w-16 rounded-full bg-gradient-to-r from-copper to-orange-500"></span>

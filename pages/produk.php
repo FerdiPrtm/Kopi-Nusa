@@ -60,7 +60,7 @@ $kategoris = db()->query("SELECT * FROM kategori ORDER BY nama ASC")->fetchAll()
 <!-- Page header -->
 <section class="bg-espresso pb-16 pt-32 text-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p class="text-sm font-semibold uppercase tracking-widest text-copper" data-aos="fade-up">Katalog</p>
+        <p class="text-sm font-semibold uppercase tracking-widest text-copperLight" data-aos="fade-up">Katalog</p>
         <h1 class="mt-3 text-4xl font-extrabold" data-aos="fade-up" data-aos-delay="100">Semua Produk</h1>
         <p class="mt-3 max-w-xl text-white/80" data-aos="fade-up" data-aos-delay="150">Jelajahi koleksi kopi dan peralatan pilihan kami.</p>
     </div>

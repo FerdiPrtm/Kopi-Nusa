@@ -54,7 +54,7 @@ $shareUrl = url('index.php?page=detail&id=' . $id);
             <i data-lucide="chevron-right" class="h-4 w-4"></i>
             <a href="<?= url('index.php?page=produk') ?>" class="transition hover:text-copper">Produk</a>
             <i data-lucide="chevron-right" class="h-4 w-4"></i>
-            <span class="text-copper"><?= e($p['nama']) ?></span>
+            <span class="text-copperLight"><?= e($p['nama']) ?></span>
         </nav>
     </div>
 </section>

@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <section class="relative overflow-hidden bg-espresso pb-16 pt-32 text-white">
     <div class="pointer-events-none absolute -right-16 top-0 h-64 w-64 rounded-full bg-copper/20 blur-3xl"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper" data-aos="fade-up">Kontak</span>
+        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copperLight" data-aos="fade-up">Kontak</span>
         <h1 class="mt-4 text-4xl font-extrabold" data-aos="fade-up" data-aos-delay="100">Hubungi Kami</h1>
         <span class="mt-5 block h-1 w-16 rounded-full bg-gradient-to-r from-copper to-orange-500"></span>
         <p class="mt-5 max-w-xl text-white/80" data-aos="fade-up" data-aos-delay="150">Punya pertanyaan atau ingin bekerja sama? Kami siap membantu.</p>

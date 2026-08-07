@@ -9,7 +9,7 @@ $pageTitle = 'Tentang Kami';
     <div class="pointer-events-none absolute -right-16 top-0 h-64 w-64 rounded-full bg-copper/20 blur-3xl"></div>
     <div class="pointer-events-none absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-coffee/20 blur-3xl"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copper">Tentang Kami</span>
+        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-copperLight">Tentang Kami</span>
         <h1 class="mt-4 text-4xl font-extrabold" data-aos="fade-up" data-aos-delay="100">Cerita di Balik Secangkir Kopi</h1>
         <span class="mt-5 block h-1 w-16 rounded-full bg-gradient-to-r from-copper to-orange-500"></span>
     </div>
@@ -19,7 +19,7 @@ $pageTitle = 'Tentang Kami';
 <section class="py-20">
     <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div data-aos="fade-right">
-            <p class="text-sm font-semibold uppercase tracking-widest text-copper">Sejarah Kami</p>
+            <p class="text-sm font-semibold uppercase tracking-widest text-copper dark:text-copperLight">Sejarah Kami</p>
             <h2 class="mt-3 text-3xl font-extrabold"><?= e(site('tentang_judul', 'Tentang Kami')) ?></h2>
             <p class="mt-5 leading-relaxed text-espresso/75 dark:text-cream/70"><?= nl2br(e(site('tentang_konten', ''))) ?></p>
             <p class="mt-4 leading-relaxed text-espresso/75 dark:text-cream/70">Dimulai dari sebuah dapur kecil dan passion terhadap kopi Nusantara, kami tumbuh menjadi UMKM yang terus menjunjung tinggi kerja sama adil dengan petani serta konsistensi kualitas di setiap kemasan.</p>
@@ -36,7 +36,7 @@ $pageTitle = 'Tentang Kami';
 <section class="bg-gradient-to-b from-transparent to-white/60 py-20 dark:to-white/[0.02]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center" data-aos="fade-up">
-            <p class="text-sm font-semibold uppercase tracking-widest text-copper">Filosofi</p>
+            <p class="text-sm font-semibold uppercase tracking-widest text-copper dark:text-copperLight">Filosofi</p>
             <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Nilai yang Kami Pegang</h2>
             <p class="mx-auto mt-4 max-w-2xl text-espresso/70 dark:text-cream/70">Kami percaya secangkir kopi yang baik adalah hasil dari kejujuran, kerja keras petani, dan ketekunan di setiap tahap.</p>
         </div>
@@ -64,7 +64,7 @@ $pageTitle = 'Tentang Kami';
 <section class="py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center" data-aos="fade-up">
-            <p class="text-sm font-semibold uppercase tracking-widest text-copper">Proses</p>
+            <p class="text-sm font-semibold uppercase tracking-widest text-copper dark:text-copperLight">Proses</p>
             <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Alur Roasting Kami</h2>
         </div>
         <div class="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">

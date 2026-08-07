@@ -12,7 +12,7 @@ function is_active_bar(string $name): string {
 ?>
 <header id="navbar" class="fixed inset-x-0 top-0 z-50">
     <nav class="mx-auto max-w-7xl px-3 pt-3 sm:px-5 sm:pt-4">
-        <div id="nav-pill" class="nav-inner flex items-center justify-between rounded-2xl border border-cream/60 px-4 py-2.5 shadow-md shadow-espresso/5 sm:px-5">
+        <div id="nav-pill" class="nav-inner flex items-center justify-between rounded-2xl border border-cream/60 bg-cream/80 px-4 py-2.5 shadow-md shadow-espresso/5 backdrop-blur-md dark:border-white/10 dark:bg-espresso/80 sm:px-5">
             <!-- Logo -->
             <a href="<?= url('index.php') ?>" class="group flex items-center gap-2.5" aria-label="<?= e(site('site_name', APP_NAME)) ?>">
                 <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-copper to-espresso text-white shadow-sm transition-transform duration-300 group-hover:scale-105">

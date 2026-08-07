@@ -25,6 +25,7 @@ $darkOn = (isset($_COOKIE['dark']) && $_COOKIE['dark'] === '1')
                         espresso:  '#3E2723',
                         coffee:    '#6F4E37',
                         copper:    '#B87333',
+                        copperLight: '#E0A36B',
                         cream:     '#F8F4EC',
                         olive:     '#6B7A4A',
                     },
