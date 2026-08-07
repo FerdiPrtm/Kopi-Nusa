@@ -45,7 +45,7 @@ require_once __DIR__ . '/../layout/head.php';
                         <?php if (!$pm['is_read']): ?><span class="rounded-lg bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-500">Baru</span><?php endif; ?>
                     </div>
                     <p class="mt-1 text-xs text-espresso/50"><?= e(format_date($pm['created_at'], 'd M Y, H:i')) ?></p>
-                    <?php if ($pm['email']): ?><a href="mailto:<?= e($pm['email']) ?>" class="mt-0.5 inline-flex items-center gap-1 text-xs text-copper hover:underline"><i data-lucide="mail" class="h-3 w-3"></i> <?= e($pm['email']) ?></a><?php endif; ?>
+                    <?php if ($pm['email']): ?><a href="mailto:<?= e($pm['email']) ?>" class="mt-0.5 inline-flex items-center gap-1 text-xs text-copper hover:underline"><i data-lucide="mail" class="h-3 w-3"></i> <span class="break-all"><?= e($pm['email']) ?></span></a><?php endif; ?>
                 </div>
             </div>
             <div class="flex gap-2">
@@ -65,7 +65,7 @@ require_once __DIR__ . '/../layout/head.php';
                 </form>
             </div>
         </div>
-        <p class="mt-4 whitespace-pre-line rounded-xl bg-cream/60 p-4 text-sm text-espresso/80 dark:bg-white/5"><?= e($pm['pesan']) ?></p>
+        <p class="mt-4 whitespace-pre-line break-words rounded-xl bg-cream/60 p-4 text-sm text-espresso/80 dark:bg-white/5"><?= e($pm['pesan']) ?></p>
     </div>
     <?php endforeach; ?>
     <?php if (count($pesans) === 0): ?>

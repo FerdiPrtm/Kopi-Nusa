@@ -48,12 +48,16 @@ function is_active_bar(string $name): string {
                     <i data-lucide="message-circle" class="h-4 w-4"></i>
                     Pesan Sekarang
                 </a>
-                <button id="menu-toggle" class="flex h-10 w-10 items-center justify-center rounded-xl text-espresso/80 transition-colors hover:bg-espresso/5 lg:hidden dark:text-cream/80 dark:hover:bg-white/10" aria-label="Menu">
-                    <i data-lucide="menu" class="h-5 w-5"></i>
+                <button id="menu-toggle" class="flex h-10 w-10 items-center justify-center rounded-xl text-espresso/80 transition-colors hover:bg-espresso/5 lg:hidden dark:text-cream/80 dark:hover:bg-white/10" aria-label="Menu" aria-expanded="false">
+                    <i data-lucide="menu" class="icon-menu h-5 w-5"></i>
+                    <i data-lucide="x" class="icon-close hidden h-5 w-5"></i>
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile menu backdrop -->
+    <div id="menu-backdrop" class="fixed inset-0 z-[-1] hidden bg-black/40 backdrop-blur-sm lg:hidden"></div>
 
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mx-3 mt-2 hidden rounded-2xl p-2 shadow-lg glass sm:mx-5 lg:hidden">

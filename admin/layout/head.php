@@ -27,6 +27,7 @@ $flash = get_flash();
 <body class="bg-cream font-sans text-espresso">
 <div class="flex min-h-screen">
     <?php require_once __DIR__ . '/sidebar.php'; ?>
+    <div id="sidebar-backdrop" class="fixed inset-0 z-30 hidden bg-black/40 backdrop-blur-sm lg:hidden"></div>
     <div id="admin-main" class="flex min-h-screen w-full flex-col lg:ml-64">
         <?php require_once __DIR__ . '/topbar.php'; ?>
         <main class="flex-1 px-4 py-8 sm:px-6 lg:px-8"><?php if ($flash): ?><script>Swal.fire({ icon: '<?= e($flash['type']) ?>', title: '<?= e($flash['message']) ?>', toast: true, position: 'top-end', showConfirmButton: false, timer: 3000, timerProgressBar: true });</script><?php endif; ?>

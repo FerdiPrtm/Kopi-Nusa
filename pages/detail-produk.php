@@ -90,20 +90,20 @@ $shareUrl = url('index.php?page=detail&id=' . $id);
                 <?php endif; ?>
             </div>
 
-            <div class="mt-6 grid grid-cols-3 gap-4">
-                <div class="rounded-xl bg-cream/70 p-4 text-center ring-1 ring-copper/5 dark:bg-white/5">
+            <div class="mt-6 grid grid-cols-3 gap-3 sm:gap-4">
+                <div class="rounded-xl bg-cream/70 p-3 text-center ring-1 ring-copper/5 dark:bg-white/5 sm:p-4">
                     <i data-lucide="package" class="mx-auto h-5 w-5 text-copper"></i>
                     <p class="mt-2 text-xs text-espresso/60 dark:text-cream/60">Berat</p>
                     <p class="mt-0.5 text-sm font-semibold"><?= e($p['berat']) ?></p>
                 </div>
-                <div class="rounded-xl bg-cream/70 p-4 text-center ring-1 ring-copper/5 dark:bg-white/5">
+                <div class="rounded-xl bg-cream/70 p-3 text-center ring-1 ring-copper/5 dark:bg-white/5 sm:p-4">
                     <i data-lucide="layers" class="mx-auto h-5 w-5 text-copper"></i>
                     <p class="mt-2 text-xs text-espresso/60 dark:text-cream/60">Stok</p>
                     <p class="mt-0.5 text-sm font-semibold <?= (int)$p['stok'] > 0 ? 'text-olive' : 'text-red-500' ?>">
                         <?= (int)$p['stok'] > 0 ? (int)$p['stok'] . ' Tersedia' : 'Habis' ?>
                     </p>
                 </div>
-                <div class="rounded-xl bg-cream/70 p-4 text-center ring-1 ring-copper/5 dark:bg-white/5">
+                <div class="rounded-xl bg-cream/70 p-3 text-center ring-1 ring-copper/5 dark:bg-white/5 sm:p-4">
                     <i data-lucide="award" class="mx-auto h-5 w-5 text-copper"></i>
                     <p class="mt-2 text-xs text-espresso/60 dark:text-cream/60">Status</p>
                     <p class="mt-0.5 text-sm font-semibold"><?= !empty($p['best_seller']) ? 'Best Seller' : 'Reguler' ?></p>

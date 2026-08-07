@@ -83,7 +83,7 @@ $isEdit = $p !== null;
         </div>
     </div>
 
-    <div class="flex items-center gap-4">
+    <div class="flex flex-wrap items-center gap-4">
         <button type="submit" class="rounded-xl bg-copper px-8 py-3 font-semibold text-white shadow-soft transition-all duration-300 hover:bg-espresso">
             <?= $isEdit ? 'Simpan Perubahan' : 'Simpan Produk' ?>
         </button>

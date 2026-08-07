@@ -50,7 +50,7 @@ require_once __DIR__ . '/../layout/head.php';
     <div class="flex flex-wrap gap-3">
         <form method="get" class="relative">
             <i data-lucide="search" class="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-coffee"></i>
-            <input type="text" name="q" value="<?= e($q) ?>" placeholder="Cari produk..." class="w-52 rounded-xl border border-cream bg-white py-2.5 pl-10 pr-4 text-sm outline-none transition focus:border-copper">
+            <input type="text" name="q" value="<?= e($q) ?>" placeholder="Cari produk..." class="w-full rounded-xl border border-cream bg-white py-2.5 pl-10 pr-4 text-sm outline-none transition focus:border-copper sm:w-52">
         </form>
         <a href="<?= url('admin/produk/create.php') ?>" class="inline-flex items-center gap-2 rounded-xl bg-copper px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:bg-espresso">
             <i data-lucide="plus" class="h-4 w-4"></i> Tambah Produk

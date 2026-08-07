@@ -37,7 +37,7 @@ $a = $a ?? null;
             </div>
         </div>
     </div>
-    <div class="flex items-center gap-4">
+    <div class="flex flex-wrap items-center gap-4">
         <button type="submit" class="rounded-xl bg-copper px-8 py-3 font-semibold text-white shadow-soft transition-all duration-300 hover:bg-espresso"><?= $a ? 'Simpan Perubahan' : 'Publikasikan' ?></button>
         <a href="<?= url('admin/artikel/index.php') ?>" class="rounded-xl border border-cream px-6 py-3 text-sm font-semibold text-espresso/60 transition hover:border-copper hover:text-copper">Batal</a>
     </div>

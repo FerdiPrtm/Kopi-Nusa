@@ -6,6 +6,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Cegah scroll horizontal dari animasi/dekorasi di layar sempit,
+   tanpa merusak position: sticky (pakai clip, bukan hidden). */
+html, body {
+    overflow-x: clip;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }

@@ -49,7 +49,7 @@ require_once __DIR__ . '/layout/head.php';
     <?php endforeach; ?>
 </div>
 
-<div class="mt-6 grid gap-6 rounded-2xl bg-espresso p-8 text-white" data-aos="fade-up">
+<div class="mt-6 grid gap-6 rounded-2xl bg-espresso p-6 text-white sm:p-8" data-aos="fade-up">
     <div class="flex flex-wrap items-end justify-between gap-4">
         <div>
             <p class="text-sm text-cream/60">Total Nilai Persediaan Produk</p>

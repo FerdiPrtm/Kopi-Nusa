@@ -50,9 +50,25 @@
     /* ---------- Mobile menu ---------- */
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuBackdrop = document.getElementById('menu-backdrop');
+    const menuOpenIcon = menuToggle ? menuToggle.querySelector('.icon-menu') : null;
+    const menuCloseIcon = menuToggle ? menuToggle.querySelector('.icon-close') : null;
+    const setMenu = (open) => {
+        if (!mobileMenu) return;
+        mobileMenu.classList.toggle('hidden', !open);
+        if (menuBackdrop) menuBackdrop.classList.toggle('hidden', !open);
+        document.body.style.overflow = open ? 'hidden' : '';
+        if (menuToggle) menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (menuOpenIcon) menuOpenIcon.classList.toggle('hidden', open);
+        if (menuCloseIcon) menuCloseIcon.classList.toggle('hidden', !open);
+    };
     if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+        menuToggle.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+        if (menuBackdrop) menuBackdrop.addEventListener('click', () => setMenu(false));
+        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) setMenu(false);
+        });
     }
 
     /* ---------- Dark mode ---------- */
